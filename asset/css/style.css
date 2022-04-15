@@ -25,6 +25,17 @@ style
     margin-left: -6px;
     margin-right: -6px;
  }
+ .btn{
+     color:#fff;
+     background-color: #000;
+     text-decoration: none;
+     padding:11px 14px;
+     display: inline-block;
+     margin-top:15px;
+     border: none;
+     text-align: center;
+     -webkit-appearance:none ;
+ }
  .mt-8{
     margin-top:8px !important;
  }
@@ -152,13 +163,14 @@ style
 #slider {
     /* min-height: 400px; /*chieu cao toi thieu */
     /* background-color: #333; */
+    position: relative;
     margin-top: 46px;
     padding-top: 50%; /*50% chieu ngang cua chinh no*/
-    background: url('/w3_thebegins/assets/img/slider/slider1.jpg') no-repeatrepeattop center / cover no-repeat;
+    background: url('../img/slider/silder1.jpg')/*.. lay file tuong doi, nhay ra khoi thu muc ma no dang dung */ top center / cover no-repeat;
 }
 #slider .text-content{
     position: absolute;
-    color:#000;
+    color: #fff;
     bottom :48px;
     left: 50%;
     transform: translateX(-50%);
@@ -167,9 +179,12 @@ style
 }
 #slider .text-heading{
     font-weight: 900;
+    text-shadow: 2px 2px 4px #000000; /*tao bong duoi chu */
 }
-#slider .text-description{
+#slider .text-desription{
     margin-top:25px;
+    font-size:15px;
+    text-shadow: 2px 2px 4px #000000;
 }
 #content{
 
@@ -273,6 +288,7 @@ style
 }
 .place-img:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 .place-body {
     padding:16px;
